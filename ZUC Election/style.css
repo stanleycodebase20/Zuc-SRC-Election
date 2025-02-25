@@ -1,0 +1,153 @@
+/* General styles */
+body {
+    font-family: 'Poppins' , sans-serif;
+    background: linear-gradient(to right,  #002147, #0056b3);
+    color: white;
+    text-align: flex;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Countdown Timer Box */
+.countdown {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    margin: 20px auto;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+.countdown:hover {
+    transform: scale(1.05);
+}
+
+/* Timer  Text */
+#timer span {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/*header */
+header {
+    background: linear-gradient(to right, #003366, #880000);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+h1 {
+    margin: 0;
+    font-size: 28px;
+    text-transform: uppercase;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+/* Sections */
+.info, .positions, .details, .contact, .countdown {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: flex;
+    transition: transform 0.3s ease-in-out;
+}
+
+.info:hover, .positions:hover, .contact:hover, .countdown:hover {
+    transform: translateY(-5px);
+}
+
+/* Countdown Timer */
+.countdown {
+    background: #003366;
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+#timer {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Contact Sections Fix */
+.contact a {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #25D366;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s;
+    margin-top: 5px;
+}
+.contact a:hover {
+    background-color: #1ebed5;
+    transform: scale(1.05);
+}
+.contact {
+    text-align: center;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.whatsapp-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.whatsapp-link {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #25D366;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.whatsapp-link:hover {
+    background-color: #1ebe5d;
+    transform: scale(1.05);
+}
+
+
+/* Footer */
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media(min-width:768px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr);   
+    }
+}
+ @media(min-width: 1024px) {
+    .container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+ }
+
