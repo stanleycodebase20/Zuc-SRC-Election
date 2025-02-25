@@ -1,1 +1,1 @@
-# Zuc-SRC-Election
+Zuc-Election
